@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_SCR</CLSNAME>
+    <LANGU>S</LANGU>
+    <DESCRIPT>Manejo Screen</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>APPLY_CHANGES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Aplica Cambios realizados</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FIELD_ACTIVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Habilita Campo</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FIELD_ACTIVE_OFF</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Deshabilita Campo</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FIELD_ACTIVE_ON</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Habilita Campo</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FIELD_HIDE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Esconde Campo</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FIELD_INPUT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Habilita Campo para edicion</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FIELD_INPUT_OFF</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Deshabilita Campo para edicion</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FIELD_INPUT_ON</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Habilita Campo para edicion</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FIELD_REQUIRED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Habilita Campo para edicion</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FIELD_REQUIRED_OFF</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Campo No Requerido</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FIELD_REQUIRED_ON</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Campo Requerido</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FIELD_SHOW</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Muestra Campo</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FIELD_VISIBLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Fija visibilidad de un campo</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GROUP_ACTIVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Habilita Grupo</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GROUP_ACTIVE_OFF</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Desabilita Grupo</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GROUP_ACTIVE_ON</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Habilita Grupo</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GROUP_HIDE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Esconde grupo</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GROUP_INPUT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Habilita Campo para edicion</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GROUP_INPUT_OFF</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Deshabilita Campo para edicion</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GROUP_INPUT_ON</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Habilita Campo para edicion</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GROUP_REQUIRED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Habilita Campo para edicion</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GROUP_REQUIRED_OFF</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Deshabilita Campo para edicion</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GROUP_REQUIRED_ON</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Habilita Campo para edicion</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GROUP_SHOW</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>muestra grupo</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GROUP_VISIBLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Habilita Campo para edicion</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>REFRESH</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>import screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_CURSOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Setea el campo donde el cursor estará</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_CURSOR_FIELD</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Setea el campo donde el cursor estará</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_FIELD_ATRIB</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Setea un atributo de un campo</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_FIELD_PREFIX</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Setea el prefijo de campos</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_GROUP_ATRIB</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Setea un atributo de un grupo de campos</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
