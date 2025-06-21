@@ -446,7 +446,12 @@ CLASS ZCL_SCR IMPLEMENTATION.
 
 
   method set_cursor_field.
-    v_cursor = v_field_prefix && fieldname.
+    read table t_screen transporting no fields with key name = fieldname.
+    if sy-subrc eq 0.
+      v_cursor = fieldname.
+    else.
+      v_cursor = v_field_prefix && fieldname.
+    endif.
   endmethod.
 
 
