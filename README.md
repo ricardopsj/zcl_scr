@@ -43,7 +43,7 @@ Los mismos verbos, pero aplicados a todos los campos cuyo `GROUP1..GROUP4` coinc
 - `group_active[_on/_off]`, `group_input[_on/_off]`, `group_required[_on/_off]`, `group_visible` / `group_show` / `group_hide`
 - `set_group_atrib( ... atrib value )` para cualquier otro atributo.
 
-Cada uno acepta `group1`–`group4` (valor a buscar en esa columna) o `groupnr` (número de columna de grupo).
+Cada uno acepta `group1`–`group4` (valor a buscar en esa columna) o `groupnr` (número de columna de grupo). El uso de `groupnr` tiene un fallo, ver *Problemas conocidos*.
 
 ### Cursor
 
@@ -60,3 +60,10 @@ El `SET CURSOR FIELD` se ejecuta dentro de `apply_changes( )`.
 ## Cómo funciona
 
 Los cambios **no** tocan la pantalla al momento: se aplican sobre la copia interna `t_screen`. `apply_changes( )` recorre la tabla `SCREEN` real y sobrescribe cada línea con la versión modificada de la copia. Esto permite acumular reglas en cualquier orden (incluso decidirlas en métodos separados) y aplicarlas de una sola vez.
+
+## Problemas conocidos
+
+- **`groupnr` no funciona como se documenta.** `set_group_atrib` filtra la columna `GROUP<groupnr>` con el valor de `group1` y además agrega `group1` como filtro de `GROUP1`, así que la condición casi nunca coincide.
+- **Sin grupo, aplica a todo.** Si no se indica ningún grupo, el WHERE queda vacío y el atributo se aplica a todos los campos de la pantalla.
+- **Campo inexistente.** `set_field_atrib` termina en dump si el campo no existe en la pantalla (con o sin prefijo).
+- **Foto completa.** `apply_changes( )` sobrescribe cada línea de `SCREEN` con la copia tomada en `refresh( )`. Los cambios que otro código haga a la pantalla después de esa foto se pierden.
